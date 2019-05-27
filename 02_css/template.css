@@ -1,0 +1,3493 @@
+/*@font-face
+{
+    font-family: MyriadPro;
+    src: url(Fonts/MyriadPro-Regular.otf) format("opentype"),url(/Fonts/MyriadPro-Regular.ttf) format("truetype");
+}
+@font-face
+{
+    font-family: MyriadPro;
+    src: url(Fonts/MyriadPro-Bold.otf) format("opentype"),url(/Fonts/MyriadPro-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+@font-face
+{
+    font-family: MyriadPro;
+    src: url(Fonts/MyriadPro-It.otf) format("opentype"),url(/Fonts/MyriadPro-It.ttf) format("truetype");
+    font-style: italic;
+}
+@font-face
+{
+    font-family: MyriadPro;
+    src: url(Fonts/MyriadPro-BoldIt.otf) format("opentype"),url(/Fonts/MyriadPro-BoldIt.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+.clearfix:after, .block:after
+{
+    visibility: hidden;    
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .clearfix, * html .block
+{
+    zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix, *:first-child + html .block
+{
+    zoom: 1;
+}
+/* IE7 */
+
+body
+{
+    font-family: Tahoma, Arial;
+    background: none repeat scroll 0 0 #fff;
+    color: #000;
+    font-family: arial;
+    font-size: 11pt !important;
+    padding: 0;
+    text-align: left !important;
+}
+
+body.contentpane
+{
+    width: auto;
+    margin: 10px;
+    text-align: left;
+}
+img
+{
+    border: 0 none;
+}
+ul
+{
+    list-style-type: none !important;
+}
+div.all-body
+{    
+    margin: auto; 
+}
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+a.logo
+{
+    display: block;
+    height: 136px;
+    width: 336px;
+}
+a.logo img
+{
+    margin-top: 12px;
+    max-height: 118px;
+    max-width: 272px !important;
+}
+a.logo span
+{
+    display: none;
+}
+a.logo h1
+{
+    text-indent: -9999px;
+}
+
+.header
+{
+    background: url(../Images/bg-header-top.png) repeat top left;
+}
+.top-header
+{
+    border-bottom: 2px solid #666;
+    color: #666;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.top-header ul
+{
+    display: block;
+    width: 70%;
+    float: left;
+    margin-bottom: 2px;
+}
+.top-header ul li
+{
+    display: block;
+    border-right: 1px solid #666;
+    float: left;
+    padding: 3px 8px;
+}
+.top-header div
+{
+    float: right;
+    background: #666;
+    color: #fff;
+    padding: 3px 5px;
+}
+
+#menu
+{
+    background: #01458E; /*url(/Images/bg_menu.gif) repeat-x;*/
+    height: 40px;
+    position: relative;
+}
+#menu ul
+{
+    display: block;
+}
+#menu li
+{
+    display: block;
+    float: left;
+}
+
+#menu li a, .main-menu-footer .menu li a
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 2px #333;
+    display: block;
+    color: #fff;
+    font-family: MyriadPro, Tahoma, Arial;
+}
+#menu li a
+{
+    height: 27px;
+    padding: 13px 7px 0 7px;
+    margin: 0px 5px;
+}
+#menu li a:hover, #menu li.active a
+{
+    background: #012F8D;
+}
+#menu li.hasmenu:hover
+{
+    background: #012F8D;
+}
+#menu li.hasmenu
+{
+    position: relative;
+}
+#menu li.hasmenu ul
+{
+    display: none !important;
+    position: absolute;
+    top: 39px;
+    left: 0px;
+    background: #01458E;
+    z-index: 9999;
+}
+#menu li.hasmenu:hover ul
+{
+    display: block !important;
+}
+#menu li.hasmenu ul li
+{
+    float: none;
+}
+.hasmenu ul li a
+{
+    font-size: 12px !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+    display: block !important;
+    float: none;
+    height: 20px !important;
+    padding: 7px 10px !important;
+    line-height: 20px !important;
+    min-width: 180px;
+}
+
+div.top-menu
+{
+    float: right;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+div.tin-noi-bat
+{
+    float: left;
+    width: 641px;
+}
+div.chuyen-de-noi-bat
+{
+    float: right;
+    width: 315px;
+}
+ul.menutop li
+{
+    float: left;
+}
+ul.menutop li a
+{
+    color: #3A4276;
+    font-family: arial;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    border-right: 1px solid #ff9999;
+}
+ul.menutop li.item-207 a
+{
+    border: none;
+    padding-right: 0;
+}
+div.main-search
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/bg-bt-search.png") no-repeat scroll left top transparent;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    top: 62px;
+    width: 251px;
+}
+div.mainsearch
+{
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 290px;
+    padding-top: 3px;
+}
+.search
+{
+    background: #fff;
+    float: right;
+    margin-right: 5px;
+    position: absolute;
+    top: 8px;
+    border-radius: 5px;
+}
+.social_logo
+{
+    float: right;
+}
+.social_logo img
+{
+    height: 24px;
+}
+input.button
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/bg-bt-search.png") no-repeat scroll left 1px transparent;
+    border: medium none;
+    float: right;
+    height: 18px;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 20px;
+}
+input#mod-search-searchword
+{
+    background: url("../Images/icon_search.png") no-repeat scroll 250px 1px #FFFFFF;
+    border: medium none;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    padding: 0px 5px 0px 5px;
+    width: 268px;
+    height: 24px;
+    outline: none;
+    border-radius: 5px;
+}
+.main-body
+{
+    background: #fff url(../Images/bg-body.gif) repeat-x top left;
+    padding-top: 20px;
+}
+
+div.danhbadoanhnghiep
+{
+    float: left;
+    height: 23px;
+    left: 644px;
+    position: absolute;
+}
+div.danhbadoanhnghiep img
+{
+    height: 23px;
+}
+div.danhbadoanhnghiep p
+{
+    margin: 0;
+    padding: 0;
+}
+div.forcus-left
+{
+    width: 475px;
+    float: left;
+    position: relative;
+}
+div.forcus-center
+{
+    float: right;
+    margin-left: 10px;
+    margin-top: 0;
+    width: 214px;
+}
+div.forcus-right
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: right;
+    text-align: center;
+    width: 313px;
+}
+ul.latestnews, ul.mostread
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    list-style-type: none !important;
+    padding-top: 10px;
+}
+
+ul.latestnews li a, ul.mostread li a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 5px 10px transparent;
+    display: block;
+    line-height: 22px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+ul.latestnews li
+{
+    border-bottom: 1px solid #d3d3d3;
+}
+ul.latestnews li:last-child
+{
+    border-bottom: none;
+}
+div.forcus
+{
+    border-bottom: 2px solid #DDDDDD;
+    height: 330px;
+    margin-bottom: 5px;
+}
+div.forcus-center h3
+{
+    margin: 0;
+}
+div.forcus-center h3 span
+{
+}
+ul.latestnews li.last
+{
+    border-bottom: none;
+}
+div.quangcao1 p
+{
+}
+div.all-body img
+{
+    max-width: 960px;
+}
+div.more-fccat
+{
+    background: url("../Images/ico21.png") no-repeat scroll 0 11px transparent;
+    padding-left: 7px;
+    padding-top: 5px;
+    text-align: justify;
+}
+div.more-fccat a
+{
+    font-weight: bold;
+    font-size: 11px;
+    color: #01458E;
+}
+div.more-fccat a:hover
+{
+    color: #DA251E;
+}
+
+div.catnews
+{
+    clear: both;
+    width: 100%;
+    margin-bottom: 15px; /*min-height: 290px;*/
+}
+div.catnews:last-child
+{
+    margin-bottom: 0px;
+}
+div.category-news
+{
+    width: 680px;
+    float: left;
+    margin-bottom: 0px;
+}
+div.catnews-left
+{
+    float: left; /*width:100%;*/
+    width: 392px;
+}
+div.catnews-left img
+{
+    width: 182px;
+    height: 115px;
+    padding: 3px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+div.catnews-left .baitop1
+{
+    float: left;
+    width: 190px;
+    margin: 0 5px 5px 0;
+}
+div.catnews-left .baidinh
+{
+    /*float: right; width: 196px; */
+}
+div.catnews-left .baidinh h3
+{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+div.catnews-left .more-baidinh
+{
+    clear: both;
+    padding-top: 0px;
+}
+div.catnews-right
+{
+    float: right;
+    width: 220px;
+}
+div.catnews-right img
+{
+    height: 42px;
+    width: 59px;
+    float: left;
+    margin-right: 5px;
+    padding: 2px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+div.catnews-right div div
+{
+    border-bottom: 1px solid #CCCCCC;
+    clear: both;
+    overflow: hidden;
+    padding: 5px 0px;
+    text-align: justify;
+}
+div.catnews-right div div:hover
+{
+    color:Blue;
+}
+
+
+div.catnews-right div div:last-child:hover
+{
+    color:Blue;
+}
+
+div.catnews-right div div:first-child
+{
+    padding-top: 0px;
+}
+div.catnews-right div div:last-child
+{
+    padding-bottom: 0px;
+    border: none;
+}
+/*a.title-section span { color: #fff; cursor: pointer; font-size: 16px; font-weight: bold; line-height: 23px; padding-right: 15px; text-align: left; }*/
+a.title-section
+{
+    float: left;
+    background: #01458E;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 8px;
+    text-align: center;
+    line-height: 17px;
+    font-family: MyriadPro, Tahoma, Arial;
+    display: block;
+}
+div.list-cat-right
+{
+    float: right;
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+}
+div.list-cat-right a
+{
+    color: #01458E;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+div.list-cat-right a:hover
+{
+    color: #DA251E;
+}
+hr.clr
+{
+    clear: both;
+    border: 0;
+}
+div.main-catnews
+{
+    border-top: none;
+    padding: 10px;
+}
+div.catnews-catrgory
+{
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+/*div.catnews-catrgory > div { width: 10000px; }*/
+div.main-right
+{
+    float: right;
+    width: 300px;
+}
+div.catnews-tieudiem
+{
+    clear: both;
+    margin-top: 5px;
+    width: 475px;
+}
+ul.mostread li
+{
+    padding-bottom: 10px;
+}
+ul.mostread li a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 5px 6px transparent;
+    display: block;
+    line-height: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+#content_Weather td
+{
+    margin-top: 10px;
+    padding-top: 15px;
+}
+div.main-right img
+{
+    width: 300px;
+}
+.chungkhoan img
+{
+    display: block;
+}
+div.border1
+{
+    background: #fff;
+    border: 1px solid #eeeeee;
+    margin-top: 10px;
+    text-align: center;
+}
+div.border1 p
+{
+    padding: 0;
+    margin: 0;
+}
+td.cNoActive
+{
+    background: #f7f7f7;
+}
+td.cActive
+{
+    background: #fff;
+}
+table.tbHeader
+{
+}
+td.cHeader, td.cHeaderN
+{
+    border: 1px solid #f4f2f2;
+    font-size: 9px;
+    background: #fbfbfb;
+    color: #555555;
+}
+
+div.main-menu-footer ul.menu li
+{
+    float: left;
+}
+div.main-menu-footer ul.menu li a
+{
+    height: 22px;
+    padding: 8px 7px 0 7px;
+}
+
+div.main-footer
+{
+    position: relative;
+    background: #e8e8e8;
+}
+.thong-tin-toa-soan
+{
+    padding: 20px 0px;
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.tab-box
+{
+    padding-bottom: 5px;
+    height: 22px;
+}
+.tab-box a
+{
+    color: #3A4276;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    width: 114px;
+    background: #C2C4C5;
+}
+.tab-box a.activeLink
+{
+    background-color: #fff;
+    border-bottom: 0;
+    padding: 5px 5px;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #DDDDDD;
+}
+.tabcontent
+{
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 3px 4px;
+}
+.hide
+{
+    display: none;
+}
+a#cont-2
+{
+    color: #3A4276;
+    display: block;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+a#cont-1
+{
+    color: #3A4276;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tool-website
+{
+    background: #fff;
+    height: 29px;
+}
+ul.latestnews
+{
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 369px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.time-now
+{
+    float: left;
+    font-size: 12px;
+    width: 590px;
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/bg-latest-news.png") no-repeat left 7px;
+    padding-left: 80px;
+}
+.time-now span
+{
+    display: block;
+    float: left;
+}
+
+div.time-now .marquee-latest-news
+{
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    height: 29px;
+    line-height: 29px;
+}
+div.time-now .marquee-latest-news a
+{
+    margin-right: 590px;
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 0px 4px transparent;
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #666;
+}
+div.time-now .marquee-latest-news a:hover
+{
+    color: #cd272f;
+}
+
+div.infomation-more
+{
+    height: 30px;
+    position: relative;
+}
+div.intro-catimgitem
+{
+    float: left;
+    margin: 0 5px 1px 0;
+}
+div.intro-catimgitem img
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 74px;
+    padding: 3px;
+    width: 120px;
+}
+div.intro-textcatitem
+{
+    /*float: right; width: 215px; */
+}
+div.intro-textcatitem a.title-cat-item
+{
+    color: #1c9a1d;
+    font-size: 13px;
+    font-weight: bold;
+}
+div.cat-i-de
+{
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: justify;
+}
+dd.create
+{
+    font-size: 11px;
+    color: #333333;
+    margin-top: 3px;
+}
+h2.detail-title
+{
+    color: #1c9a1d;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+div.intro
+{
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: justify;
+}
+div.item-separator
+{
+    border-bottom: 1px solid #CCCCCC;
+    clear: both;
+    display: block;
+    height: 6px;
+    margin: 0;
+    padding: 0;
+}
+div.items-leading div.intro-catimgitem
+{
+    float: left;
+    margin-right: 7px;
+    width: 270px;
+}
+div.items-leading div.intro-catimgitem img
+{
+    height: 170px;
+    width: 270px;
+}
+div.items-leading div.intro-textcatitem
+{
+    width: 385px !important;
+}
+div.items-leading div.intro-textcatitem a.title-cat-item
+{
+    color: #004276;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.pagination p
+{
+    float: right;
+    display: none;
+}
+div.pagination ul
+{
+    float: right;
+}
+div.pagination ul li
+{
+    display: inline;
+    float: left;
+    margin-left: 4px;
+}
+div.category-news ul.mostread li a
+{
+    display: inline;
+    padding-right: 0;
+}
+ul.more-article
+{
+    border-top: 5px solid #D9D9DB;
+    background: none repeat scroll 0 0 transparent;
+}
+span.time-more-ar
+{
+    color: #333333;
+    font-size: 11px;
+}
+div.ja-zincontent-img img
+{
+    height: 185px;
+}
+.ja-zinfp-featured .ja-zincontent-wrap
+{
+    display: none;
+    position: absolute;
+    width: 330px !important;
+}
+div.ja-zinfp-main-wrap div.active
+{
+    display: block;
+}
+.ja-contentslider-center img
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 110px;
+    margin: 0 0 4px;
+    overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    width: 172px;
+}
+.ja-zinfp-links-actions
+{
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.ja-zinfp-links-actions a, .ja-zinfp-links-actions a:focus
+{
+    color: #FFFFFF;
+    display: none;
+    float: right;
+}
+.ja-zinfp-featured-border
+{
+    height: 290px !important;
+    margin-right: 0;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+div.forcus-right .ja-contentslider-center img
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 85px;
+    margin: 0;
+    overflow: hidden;
+    padding: 3px;
+    width: 135px;
+}
+div.forcus-right .ja-contentslider
+{
+    height: 132px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: auto !important;
+}
+div.forcus-right div.chuyendenoibat
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/chuyende-noibat-title.png") no-repeat scroll 10px center transparent;
+    border-bottom: 2px solid #0074BA;
+    font-size: 18px;
+    padding-bottom: 4px;
+    padding-left: 28px;
+    padding-top: 4px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+div.forcus-right div.ja-button-control span
+{
+}
+div.forcus-right div.ja-contentslider
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 296px !important;
+    margin: auto;
+}
+div.forcus-right div.chuyende
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+div.forcus-right div.ja_slidetitle
+{
+    height: 16px;
+    overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: left;
+}
+div.forcus-right .ja-button-control
+{
+    bottom: 5px;
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+div.forcus-right .ja-contentslider-left, div.forcus-right .ja-contentslider-right
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/next-noibat.png") no-repeat scroll right top transparent;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    width: 12px;
+}
+#btl
+{
+    margin-right: 5px;
+    margin-top: 2px;
+    position: relative;
+}
+div.btl-buttonsubmit form
+{
+    float: right;
+}
+div.btl-buttonsubmit form .btl-buttonsubmit
+{
+    margin: 0;
+}
+div.forcus-center ul.latestnews li a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 5px 10px transparent;
+    display: block;
+    line-height: 17px;
+    padding: 3px 10px 3px 15px;
+}
+table.listarticleuser
+{
+}
+table.listarticleuser tr.cat-list-row0
+{
+    background: none repeat scroll 0 0 #DADADA;
+    color: #000000;
+}
+table.listarticleuser tr.cat-list-row1
+{
+    background: none repeat scroll 0 0 #F4F4F4;
+    color: #000000;
+}
+table.listarticleuser tr td
+{
+    border: 1px solid #FFFFFF;
+    padding: 0 0 0 10px;
+}
+table.listarticleuser th
+{
+    background: #000;
+    border: 1px solid #fff;
+}
+table.listarticleuser th a
+{
+    color: #fff;
+}
+div.category-list fieldset
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: right;
+}
+.itp-sbb-bl
+{
+    border: 0;
+    padding-bottom: 5px;
+}
+#jform_contact_company, #jform_contact_name, #jform_contact_email, #jform_contact_phone, #jform_contact_emailmsg, #jform_contact_message
+{
+    width: 400px;
+}
+div.contact-form form fieldset dt
+{
+    clear: left;
+    font-weight: bold;
+    float: left;
+    padding: 3px 0;
+    width: 7em;
+}
+div.contact-form #jform_contact_message
+{
+    max-width: 400px;
+    max-height: 250px !important;
+    min-width: 400px;
+    min-height: 250px !important;
+}
+div.videoplayer
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin-bottom: 15px;
+    width: 640px;
+}
+div.more-video-article
+{
+    float: right;
+    width: 300px;
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+div.more-video-article li
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/media.png") no-repeat scroll 0 center transparent;
+    font-size: 12px;
+    margin-bottom: 12px;
+    min-height: 17px;
+    padding-left: 29px;
+}
+div.more-video-article h3
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/chuyende-noibat-title.png") no-repeat scroll 10px center transparent;
+    border-bottom: 2px solid #0074BA;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    padding-left: 28px;
+    padding-top: 4px;
+    text-align: left;
+}
+div.more-video-article ul
+{
+    margin: 10px;
+    padding-bottom: 15px;
+}
+div.video-item
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 145px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+    width: 200px;
+}
+div.video-item img
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+    padding: 2px;
+    width: 194px;
+}
+li.item-473 ul
+{
+    margin-left: -146px !important;
+}
+li.item-473
+{
+}
+input#jform_title
+{
+    width: 100%;
+}
+input#jform_title, input#jform_alias
+{
+    width: 100%;
+}
+div.thong-tin-toa-soan ul
+{
+    height: auto !important;
+    list-style-type: none !important;
+}
+div.thong-tin-toa-soan ul li
+{
+    margin-top: 0 !important;
+}
+div.thong-tin-toa-soan ul li:last-child
+{
+    border-right: none !important;
+}
+a.syndicate-module
+{
+    float: left;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+a.syndicate-module img
+{
+    height: 20px;
+    padding-left: 3px;
+}
+div#slideShowItems
+{
+    height: 322px;
+    overflow: hidden;
+    position: relative;
+    background: none;
+}
+
+div#slideShowItems div
+{
+    width: 626px;
+}
+
+
+div#slideShowItems img
+{
+    float: none;
+    height: 240px;
+    margin-right: 0;
+}
+
+ul#slideShowCount
+{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 330px;
+}
+ul#slideShowCount li.slide
+{
+    background: none repeat scroll 0 0 #4F5150;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 10px;
+    line-height: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+ul#slideShowCount li.slide span
+{
+    color: white;
+    font-size: 0;
+    font-weight: normal;
+    padding-left: 10px;
+    line-height: 0;
+}
+
+ul#slideShowCount li.slide:hover
+{
+    background-position: left -18px;
+}
+
+ul#slideShowCount li.slide.selectedTab
+{
+    background: #eb7515;
+}
+div#slideShow
+{
+    background: none;
+    width: 330px;
+}
+div#slideShowItems p
+{
+    color: #000000;
+    display: block;
+    margin-top: 0;
+}
+#comments_form_name, #comments_form_email
+{
+    width: 300px;
+}
+div#comments
+{
+    border-top: 3px solid #ccc;
+    margin-top: 20px;
+}
+div.items-more
+{
+    margin-top: 20px;
+    border-top: 3px solid #ccc;
+}
+div.items-more li
+{
+    background: url("../Images/arrow.png") no-repeat scroll 10px center transparent;
+    padding-bottom: 3px;
+    padding-left: 22px;
+    padding-top: 3px;
+}
+div.items-more li a
+{
+    line-height: 20px;
+}
+div.items-more li img
+{
+    width: 20px;
+    margin-bottom: -4px;
+}
+div.items-more h3
+{
+    padding-top: 0;
+    margin-top: 0;
+}
+div.items-more-2
+{
+    background: url("../Images/arrow.png") no-repeat scroll 0px center transparent;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+div.quang-cao-top
+{
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 611px;
+}
+div.quang-cao1
+{
+    float: left;
+    width: 303px;
+}
+div.quang-cao2
+{
+    float: right;
+    width: 303px;
+}
+div.quang-cao-top .banneritem
+{
+    margin: 0;
+}
+div.quang-cao-top p
+{
+    padding: 0;
+    margin: 0;
+}
+div.quang-cao-top img, div.quang-cao-top embed
+{
+    height: 102px;
+    width: 303px;
+    background: #e5e5e5;
+}
+div.cat-children ul li
+{
+    float: left;
+    padding-bottom: 10px;
+    width: 25%;
+}
+div.cat-children ul li a
+{
+    color: #000;
+    padding-left: 7px;
+}
+div.cat-children ul li a:hover
+{
+    text-decoration: underline;
+}
+div.left-label
+{
+    float: left;
+    width: 160px;
+}
+ul.danhbadn li
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.danhbadn input
+{
+    width: 400px !important;
+}
+select#jform_nganhnghechinh, select#jform_nganhnghephu1, select#jform_nganhnghephu2, select#jform_nganhnghephu3
+{
+    width: 400px;
+}
+.danhbadn #jform_introduction_container table.mceLayout
+{
+    width: 700px !important;
+}
+div.danhsachdn td, div.danhsachdn th
+{
+    padding: 5px;
+}
+div.danhsachdn table, div.danhsachdn table td, div.danhsachdn table th
+{
+    border: 1px solid #ccc;
+}
+
+div.chitietdoanhnghiep td
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+ul.dmnn li
+{
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.danhsachdn div.list-footer ul li
+{
+    float: left;
+}
+div.danhsachdn div.counter
+{
+    float: right;
+}
+div.danhsachdn div.limit
+{
+    display: none;
+}
+div.danhsachdn div.list-footer
+{
+    margin-top: 20px;
+}
+div.danhsachdn table
+{
+    background: #fff;
+}
+
+div.all-body div#preview img
+{
+    max-width: 250px;
+}
+div.all-body div#preview
+{
+    padding-top: 20px;
+    text-align: center;
+}
+div.item-page p span
+{
+    font-size: 13px !important;
+}
+div.item-page p em span, div.item-page p em
+{
+    font-size: 13px !important;
+    font-style: italic;
+    font-weight: normal;
+}
+div.itp-sb-right img
+{
+    width: 18px;
+}
+li.pagination-start, li.pagination-end, li.pagination-next, li.pagination-prev
+{
+    display: none !important;
+}
+div.pagination li a
+{
+    border: 1px solid #CCCCCC;
+    clear: both;
+    display: block;
+    text-align: center;
+     margin: 10px 0;
+}
+
+#breadcrumbs
+{
+    font-size: 0.85em;
+    margin: 0px 20px 5px 0 !important;
+    padding: 0;
+    text-align: left;
+}
+div.breadcrumbs a
+{
+    color: #9C171F;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 10px !important;
+}
+div.breadcrumbs span, div.breadcrumbs li.break-2 a
+{
+    display: inline-block;
+    color: #DA251D;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 20px 0 10px !important;
+}
+div.breadcrumbs li
+{
+    background: none;
+    float: left;
+}
+div.breadcrumbs img
+{
+    display: inline-block;
+    float: left;
+    margin-top: 7px;
+}
+div.breadcrumbs
+{
+    border-left: 4px solid #01458e;
+    display: inline-block;
+    float: left;
+    padding-top: 0;
+}
+ul.menu li.item-435 img
+{
+    padding-top: 8px;
+}
+ul.menu li.item-435 span
+{
+    display: none;
+}
+div.menu ul.menu li a.active
+{
+    color: #DA251D;
+}
+div.login
+{
+    float: right;
+}
+div.left-maim1
+{
+    float: left;
+    width: 640px;
+}
+div.forcus-left div.anh-tieudiem
+{
+    float: left;
+    width: 273px;
+}
+div.forcus-left div.anh-tieudiem img
+{
+    height: 207px;
+    width: 266px;
+    padding: 3px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+div.forcus-left div.tieudiem
+{
+    float: right;
+    text-align: justify;
+    width: 190px;
+}
+div.forcus-left div.tieudiem1
+{
+    height: 215px;
+    overflow: hidden;
+    padding-bottom: 9px;
+}
+h2.title-tieude1 a
+{
+    color: #a51423;
+    font-size: 17px;
+}
+h2.title-tieude1
+{
+    margin-bottom: 5px;
+}
+div.tieudiem1 div.detail
+{
+    line-height: 18px;
+}
+h3.title-tieude2
+{
+    font-size: 15px;
+}
+div.clr
+{
+    clear: both;
+}
+div.tieudiem3:first-child
+{
+    margin-left: 0px;
+}
+div.tieudiem3, div.tieudiem4, div.tieudiem5
+{
+    float: left;
+    height: 178px;
+    overflow: hidden;
+    width: 150px;
+    margin-left: 12px;
+}
+div.tieudiem5
+{
+    float: right;
+}
+div.tieudiem4
+{
+    margin-left: 13px;
+}
+div.tieudiem3 img, div.tieudiem3 img, div.tieudiem3 img
+{
+    width: 148px;
+    height: 104px;
+}
+div.forcus-center .moduletable
+{
+    margin: 0;
+}
+div.forcus-center h3
+{
+    background: none repeat scroll 0 0 #215191;
+    color: #C5F0FF;
+    font-weight: normal;
+    padding: 5px 5px 5px 13px;
+}
+div.catnews-left h3 a
+{
+    font-size: 15px;
+    color: #01458E;
+}
+div.catnews-left h3 a:hover
+{
+    color: #DA251E;
+}
+
+div.catnews-red div.main-catnews
+{
+    background: #a51423;
+}
+div.catnews-red
+{
+    color: #000;
+}
+/*div.catnews-red div.catnews-catrgory { background: transparent url("/Images/bg-header-col3-red.png") no-repeat scroll right bottom; }*/
+/*div.catnews-red a.title-section { padding: 6px 20px 6px; float: left; background: transparent url('/Images/bg-header-red.png') no-repeat right bottom; }*/
+/*div.catnews-red a.title-section span { color: #fff; }*/
+div.catnews-red div.list-cat-right
+{
+    color: #fff;
+}
+div.catnews-red div.list-cat-right a
+{
+    color: #fff;
+    background: none;
+}
+div.catnews-red div.list-cat-right a:hover
+{
+    color: #DA251E;
+}
+.tieudiem-red-1, .tieudiem-red-2, .tieudiem-red-3
+{
+    width: 200px;
+}
+div.tieudiem-red-1
+{
+    float: left;
+}
+div.tieudiem-red-2
+{
+    float: left;
+    margin-left: 10px;
+}
+div.tieudiem-red-3
+{
+    float: right;
+}
+div.catnews-red img
+{
+    width: 192px;
+    height: 117px;
+    margin-bottom: 5px;
+    padding: 3px;
+    border: 1px solid #cccc33;
+}
+div.catnews-red div.catnews-catrgory
+{
+    background: #e9a749;
+}
+div.catnews-red div.tieudiem-red-detail
+{
+    background: #e9a749;
+    padding: 10px;
+}
+div.catnews-red div.tieudiem-red-detail a
+{
+    color: #fff;
+}
+div.tieudiem-red-detail div.title-tieudiem a
+{
+    font-weight: bold;
+}
+div.catnews-red div.detail-tieudiem
+{
+    padding-top: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+div.main-component
+{
+    clear: both; /*margin-bottom: 10px;*/
+}
+body div.all-body li.item-435 a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/home1.png") no-repeat scroll 0 center transparent !important;
+    display: block;
+    margin-left: 10px;
+    text-indent: -999px;
+    width: 20px;
+}
+
+.menu-footer
+{
+    background: #01458E /*url(/Images/bg-menu-footer.png) repeat-x top left;*/;
+}
+div.main-menu-footer ul.menu
+{
+    height: 30px;
+    padding: 0;
+}
+
+div.mang-xa-hoi
+{
+    position: absolute;
+    right: 0;
+    top: 85px;
+}
+img.img-f-cat
+{
+    width: 342px;
+    height: auto;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+div.title-f-cat a
+{
+    color: #1c9a1d;
+    font-size: 16px;
+    font-weight: bold;
+    line-height:20px;
+}
+div.leading-left
+{
+    /*float: left; width: 365px;*/
+}
+div.title-f-cat
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.leading-right
+{
+    background: none repeat scroll 0 0 #E5E5E5;
+    float: right;
+    margin-bottom: 10px;
+    width: 320px;
+}
+div.leading-right li a
+{
+    color: #000;
+}
+div.leading-right h3
+{
+    background: none repeat scroll 0 0 #215191;
+    height: 17px;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 7px;
+}
+div.leading-right h3 span
+{
+    background: none repeat scroll 0 0 #E4E6E5;
+    color: #215191;
+    display: inline;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+div.doc-nhieu-nhat .tabcontent3
+{
+    padding: 5px 0px 5px 8px;
+    height: 375px;
+}
+div.doc-nhieu-nhat ul
+{
+    overflow: hidden;
+}
+div.doc-nhieu-nhat ul li
+{
+    border-bottom: 1px solid #D3D3D3;
+}
+div.doc-nhieu-nhat ul li:last-child
+{
+    border-bottom: none;
+}
+div.doc-nhieu-nhat ul li a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 5px 10px transparent;
+    display: block;
+    line-height: 17px;
+    padding: 3px 10px 3px 15px;
+}
+div.main-component-left
+{
+    width: 370px;
+    float: left;
+}
+div.main-component-right
+{
+    float: right;
+    width: 260px;
+}
+.main-component-right.part-right
+{
+    width: 300px;
+}
+div.main-component-right .leading-right
+{
+}
+div.all-body .items-leading
+{
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 0 0 15px;
+}
+div.dong-su-kien
+{
+    clear: both;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+div.dong-su-kien div.dong-su-kien-list
+{
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+}
+div.dong-su-kien div.dong-su-kien-item-0, div.dong-su-kien div.dong-su-kien-item-1
+{
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+div.dong-su-kien a
+{
+}
+div.dong-su-kien img
+{
+    border: 1px solid #CCCCCC;
+    height: 65px;
+    padding: 3px;
+    width: 90px;
+    background: #fff;
+    float: left;
+    margin-right: 5px;
+}
+div.dong-su-kien h3
+{
+    background: none repeat scroll 0 0 #3398CC;
+    margin: 0px;
+    padding: 5px 10px;
+}
+div.dong-su-kien h3 a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/sidebar_box_arrow.jpg") no-repeat scroll right center #EEF2F4;
+    color: #B3123B;
+    font-size: 13px;
+    height: 20px;
+    padding: 2px 12px;
+}
+.title-dong-sk
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+div.main-article div.main-component-left
+{
+    float: left;
+    width: 640px;
+}
+div.main-article table
+{
+    border: 0 !important;
+}
+div.main-article td
+{
+    border: none;
+}
+div.leading-right
+{
+    background: #fff;
+    float: none;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 280px;
+    padding: 10px;
+}
+.title-docnhieunhat
+{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold; /*text-shadow: 0 0 1px #01458E;*/
+    display: block;
+    font-family: MyriadPro;
+    margin-bottom: 8px;
+    color: #01458E;
+}
+div.tinlienquan
+{
+    background: none repeat scroll 0 0 #E5E5E5;
+    margin: 5px 0;
+    padding: 5px;
+}
+div.tinlienquan ul li
+{
+    background: url("../Images/arrow.png") no-repeat scroll 0 center transparent;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-top: 3px;
+}
+div.tinlienquan ul li a
+{
+    font-size: 11px;
+    font-weight: bold;
+}
+div.tinlienquan ul li a:hover
+{
+    text-decoration: underline;
+}
+div.catnews-left p
+{
+    line-height: 20px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+div.main-right div.leading-right div.doc-nhieu-nhat ul
+{
+    overflow: hidden;
+}
+div.main-m1
+{
+    clear: both;
+    font-size: 13px;
+}
+.item-chuyende.clearfix
+{
+    width: 50%;
+    float: left;
+}
+.chuyende
+{
+    padding: 10px;
+    clear: both;
+    background: #efefef;
+    border: 1px solid #CACACA;
+    box-shadow: 0 0 3px #CACACA;
+}
+.chuyende .title
+{
+    height: 30px;
+    color: #0f7cbe;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    width: 130px;
+    float: left;
+}
+.chuyende .marquee-with-options
+{
+    width: 789px;
+    float: right;
+    margin-right: 3px;
+    overflow: hidden;
+}
+.chuyende .marquee-with-options a
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/arow.png") no-repeat scroll 0px 6px transparent;
+    padding-left: 10px;
+    margin-right: 789px;
+}
+.chuyende .chuyende_item
+{
+    width: 181px;
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+}
+.chuyende .chuyende_item.last-child
+{
+    margin-right: 0px;
+}
+/*fix for ie 8*/
+.chuyende a
+{
+    color: #004276;
+    font-size: 13px;
+    font-weight: bold;
+}
+.chuyende img
+{
+    width: 171px;
+    height: 106px;
+    margin-bottom: 5px;
+    padding: 3px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+div.block
+{
+    margin-bottom: 10px;
+}
+.block.adv-bottom
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+div.tacgia
+{
+    color: #CCCCCC;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+div.catnews-tieudiem div.tieudiem3 img, div.catnews-tieudiem div.tieudiem4 img, div.catnews-tieudiem div.tieudiem5 img
+{
+    width: 142px;
+    height: 104px;
+    padding: 3px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+div.intronews-detail
+{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: justify;
+}
+div.intronews-detail img
+{
+    float: left;
+    margin-right: 5px;
+    height: 30px;
+}
+div.tygiangoaite
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/bgGold.gif") repeat-x scroll 0 0 transparent;
+    padding: 5px 5px 10px 15px;
+    clear: both;
+}
+#all-table tr:nth-child(2n)
+{
+    background: none repeat scroll 0 0 #DEE3E5;
+}
+div.tygiangoaite th
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: normal;
+}
+div.tygiangoaite
+{
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+}
+#breadcrumbs
+{
+    font-size: 0.85em;
+    height: 20px;
+    margin: 15px 20px 15px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.tab-box2
+{
+    padding-bottom: 5px;
+    height: 22px;
+    background: none repeat scroll 0 0 #ccc;
+}
+.tab-box2 a
+{
+    background: none repeat scroll 0 0 transparent;
+    color: #000;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    width: 114px;
+}
+.tab-box2 a.activeLink2
+{
+    background-color: #DE5F2C;
+    border-bottom: 0;
+    padding: 5px 5px;
+    border-top: 1px solid #DE5F2D;
+    border-left: 1px solid #DE5F2D;
+    border-right: 1px solid #DE5F2D;
+    color: #fff;
+}
+.tabcontent2
+{
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 8px;
+    background: #fff;
+    height: 374px;
+    padding-right: 0px;
+}
+.tab-box2 a#cont2-1
+{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 80px;
+}
+.tab-box2 a#cont2-2
+{
+    display: inline-block;
+    float: right;
+    text-align: center;
+    width: 111px;
+}
+div.forcus-center a.activeLink
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #215191;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+div.tieudiem-video li
+{
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    overflow: hidden;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+div.tieudiem-video li img
+{
+    border: 0 none;
+    float: left;
+    height: 55px;
+    margin: 0 5px 0 0;
+    width: 85px;
+}
+div.tieudiem-video li a.img-intro
+{
+    float: left;
+    margin: 0 5px 0 0;
+    position: relative;
+}
+div.tieudiem-video li a.title-intro
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+div.tieudiem-video li a.img-intro img.play
+{
+    height: 20px;
+    left: 32px;
+    position: absolute;
+    top: 17px;
+    width: 20px;
+}
+div.ds-tieudiem-video ul
+{
+    height: 443px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 10px 10px;
+    position: relative;
+    width: 325px;
+    z-index: 1;
+}
+div.ds-tieudiem-video-title p
+{
+    background: none repeat scroll 0 0 #DE5F2C;
+    border-right: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    float: none;
+    line-height: 25px;
+    margin: -1px -2px 0;
+    padding: 0 25px 0 10px;
+}
+div.ds-tieudiem-video
+{
+    background: #fff;
+    float: right;
+    height: 490px;
+    padding: 0 0 0 1px;
+    position: relative;
+    width: 335px;
+    z-index: 1;
+}
+div.tieudiem-video
+{
+    height: 500px;
+}
+div.main-video-play
+{
+    background: #fff;
+    float: left;
+    height: 470px;
+    padding: 10px;
+    width: 590px;
+}
+div.title-main-video h3
+{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 5px 0;
+}
+div.intro-main-video
+{
+    height: 50px;
+    overflow: auto;
+}
+div.left-video
+{
+    float: left;
+    width: 300px;
+    margin-bottom: 15px;
+}
+div.left-video h3
+{
+    margin: 0;
+    background: none repeat scroll 0 0 #DF6839;
+    color: #FFFFFF;
+    font-family: tahoma;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    width: 135px;
+}
+div.left-video li a
+{
+    color: #555555;
+    font: bold 12px Arial;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0px;
+    border-top: 1px dotted #ccc;
+}
+div.left-video li
+{
+    padding: 0px 10px;
+}
+div.left-video ul
+{
+    padding: 0;
+}
+.blog
+{
+    padding: 10px;
+    background: #fff;
+}
+div.tieudiem-component
+{
+    float: right;
+    width: 725px;
+}
+div.tieudiem-component div.items-row
+{
+    float: left !important;
+    width: 164px;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    background: none repeat scroll 0 0 #ECECEC;
+    margin-bottom: 10px !important;
+}
+div.tieudiem-component div.row-3, div.tieudiem-component div.row-7, div.tieudiem-component div.row-11, div.tieudiem-component div.row-15
+{
+    float: right;
+    margin-left: 8px !important;
+    margin-right: 0px !important;
+}
+div.tieudiem-component div.row-0, div.tieudiem-component div.row-4, div.tieudiem-component div.row-8, div.tieudiem-component div.row-12
+{
+    margin-right: 8px !important;
+    margin-left: 0px !important;
+}
+div.tieudiem-component div.items-video img
+{
+    border: 2px solid #f8f8f8;
+    display: block;
+    height: 94px;
+    width: 140px;
+}
+div.items-video
+{
+    height: 160px;
+    padding: 10px;
+    position: relative;
+}
+div.pagination span.pagenav
+{
+    background: none repeat scroll 0 0 #C3261A;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+div.pagination a.pagenav
+{
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: medium none;
+    display: block;
+    font-size: 12px;
+}
+div.tieudiem-component div.items-video img.play-bt
+{
+    border: medium none;
+    height: 32px;
+    left: 70px;
+    position: absolute;
+    top: 43px;
+    width: 32px;
+}
+div.tieudiem-component div.items-video a
+{
+    color: #333333;
+    font: bold 12px/18px Arial;
+    text-decoration: none;
+}
+div.tieudiem3 a, div.tieudiem4 a, div.tieudiem5 a
+{
+    font-weight: bold;
+}
+div.list-more-video
+{
+    clear: both;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 15px;
+}
+div.list-more-video div.items-video
+{
+    background: none repeat scroll 0 0 #ECECEC;
+    float: left !important;
+    margin-bottom: 15px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    width: 159px;
+}
+div.list-more-video img
+{
+    border: 2px solid #F8F8F8;
+    display: block;
+    height: 94px;
+    width: 163px;
+}
+div.list-more-video img.play-bt
+{
+    border: medium none;
+    height: 32px;
+    left: 78px;
+    position: absolute;
+    top: 43px;
+    width: 32px;
+}
+div.tab-box3
+{
+    background: none repeat scroll 0 0 #215191;
+    height: 17px;
+    padding-left: 5px;
+    padding-top: 7px;
+    margin: 3px;
+    margin-bottom: 0px;
+}
+div.tab-box3 a
+{
+    color: #fff;
+}
+div.tab-box3 a.activeLink3
+{
+    background: none repeat scroll 0 0 #E4E6E5;
+    color: #215191;
+    display: inline;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+div.tab-box3 a.tabLink3
+{
+    display: inline;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+ul.top-video
+{
+    background: #2b2b2b;
+}
+.top-video li
+{
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom: 1px solid #232323;
+    border-top: 1px solid#313131;
+    padding: 5px 0px 5px 20px;
+}
+.top-video li.current
+{
+    background: #4f4f4f url("http://www.quybaovevaphattrienrungna.org/Images/play.png") no-repeat 5px 45%;
+}
+ul.top-video a
+{
+}
+ul.top-video a.img-intro
+{
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+}
+ul.top-video a img
+{
+    width: 60px;
+    height: 38px;
+}
+ul.top-video a img.play-bt
+{
+    left: 22px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+    height: 15px;
+}
+ul.top-video a.title-video
+{
+    background: none repeat scroll 0 0 transparent;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    color: #fff;
+    font-weight: bold;
+}
+div.main-component-right ul.top-video a.title-video
+{
+}
+div.doc-nhieu-nhat ul.top-video li
+{
+    height: 50px;
+    margin-bottom: 5px;
+}
+div.head ul.menu li.active a
+{
+}
+div.head ul.menu li.active li a
+{
+    /*color: #fff;*/
+    text-decoration: none;
+}
+div.title-nt
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/ngoaite.png") no-repeat scroll 0 center transparent;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 24px;
+    color: #A51423;
+}
+div.title-giavang
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/vang.png") no-repeat scroll 0 center transparent;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 24px;
+    color: #A51423;
+}
+div.main-component-left #comments-form textarea
+{
+    clear: both;
+    height: 75px;
+    margin: 0;
+    max-width: 628px !important;
+    resize: none;
+    width: 100%;
+}
+div.grippie
+{
+    display: none !important;
+}
+#comments-form #comments-form-name, #comments-form #comments-form-email
+{
+    width: 230px;
+}
+.main-component-left #comments-form #comments-form-buttons
+{
+    float: left;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 19px;
+    padding: 0 0 0 20px;
+}
+.main-component-left #comments-form .btn, #comments-report-form .btn
+{
+    padding: 0 20px;
+}
+.main-component-left #comments-form .btn div, #comments-report-form .btn div
+{
+}
+.main-component-left #comments-form .btn a
+{
+}
+.main-component-left #jc h4
+{
+    background-color: inherit;
+    border-bottom: medium none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 0 2px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main-component-left #jc h4.gui-bl-title
+{
+    border-bottom: 1px solid #777777;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main-component-left #comments .comments-list
+{
+    height: 1%;
+    margin-left: 0;
+}
+.main-component-left #comments .comment-body
+{
+    color: #000;
+    margin: 6px 0 0;
+    padding: 10px 0 2px;
+    font-weight: bold;
+}
+.main-component-left #jc .rbox
+{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 0 0 0;
+    line-height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 4px 8px;
+    width: auto;
+}
+div.items-more h3
+{
+    padding-top: 5px;
+}
+.spshare
+{
+    margin: 10px 0px;
+}
+.spshare .spshare_fltlft
+{
+    float: left;
+}
+.none-overflow-hidden
+{
+    overflow: visible !important;
+}
+.item-page.none-overflow-hidden
+{
+    padding: 10px !important;
+    background: #fff;
+}
+
+.question
+{
+    background: #eef2f4;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.question > span
+{
+    font-weight: bold;
+    font-size: 13px;
+}
+.question form
+{
+    font-size: 12px;
+}
+.answer
+{
+    margin: 20px 0px 10px 0px;
+}
+.question .answer p
+{
+    margin: 0px;
+    margin-top: 5px;
+}
+.answer label
+{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.question input[type="button"]
+{
+    padding: 5px;
+}
+.question .title_vote
+{
+    font-size: 20px;
+}
+.tableResult td
+{
+    padding: 3px;
+}
+.number_vote
+{
+    text-align: right;
+}
+.question .sum_vote
+{
+    font-size: 13px;
+    text-align: right;
+}
+
+/*Quang cao*/
+.bannergroup
+{
+    position: relative;
+}
+.bannergroup.runner .banneritem
+{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 0px;
+}
+.main-component .banneritem
+{
+    position: relative;
+}
+.quang-cao1 .bannergroup, .quang-cao2 .bannergroup
+{
+    height: 102px;
+    width: 303px;
+}
+
+.adv-right-top-1, .adv-right-top-2, .adv-right-top-3
+{
+    margin-bottom: 15px;
+}
+
+.adv-right-top-1 .bannergroup, .adv-right-top-2 .bannergroup, .adv-right-top-3 .bannergroup, .adv-right-top-1 .bannergroup img, .adv-right-top-2 .bannergroup img, .adv-right-top-3 .bannergroup img, .adv-right-top-1 .bannergroup embed, .adv-right-top-2 .bannergroup embed, .adv-right-top-3 .bannergroup embed
+{
+    width: 300px;
+}
+
+.adv-right-top-1 .bannergroup, .adv-right-top-1 .bannergroup img, .adv-right-top-1 .bannergroup embed
+{
+    height: 418px;
+}
+
+.adv-right-top-2 .bannergroup:first-child
+{
+    height: 275px;
+    margin-bottom: 5px;
+}
+.adv-right-top-2 .bannergroup:first-child img, .adv-right-top-2 .bannergroup:first-child embed
+{
+    height: 275px;
+}
+.adv-right-top-2 .bannergroup:last-child, .adv-right-top-2 .bannergroup:last-child img, .adv-right-top-2 .bannergroup:last-child embed
+{
+    height: 138px;
+}
+
+.adv-right-top-3 .bannergroup, .adv-right-top-3 .bannergroup img, .adv-right-top-3 .bannergroup embed
+{
+    height: 136px;
+}
+.adv-right-top-3 .bannergroup
+{
+    margin-top: 5px;
+}
+.adv-right-top-3 .bannergroup:first-child
+{
+    margin-top: 0px;
+}
+
+.banner-center
+{
+    width: 640px;
+    height: 101px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.banner-center img
+{
+    width: 640px;
+}
+div.doanh-nghiep-tieu-bieu
+{
+    width: inherit;
+}
+
+#divAdRight img, #divAdLeft img
+{
+    width: 125px;
+}
+
+/* cap 2 */
+.chuyende_giua
+{
+    border-top: 5px solid #C7C8CA;
+    margin: 15px 10px 0px 0px;
+    padding-top: 10px;
+}
+.chuyende_giua img
+{
+    float: left;
+    margin-right: 5px;
+}
+.chuyende_giua span
+{
+    font-size: 13px;
+}
+.chuyende_giua a
+{
+    color: #135CA9;
+    font-weight: bold;
+    font-size: 14px;
+}
+.chuyende_giua_title
+{
+    text-transform: uppercase;
+    color: #646567;
+    font-weight: bold;
+    font-size: 16px;
+}
+.chuyende_giua_new
+{
+    padding-top: 5px;
+}
+.chuyende_vt6
+{
+    border-top: 5px solid #C7C8CA;
+    margin: 15px 10px 0px 0px;
+    padding-top: 10px;
+}
+.chuyende_vt6 img
+{
+    float: left;
+    margin-right: 4px;
+}
+.chuyende_vt6 a
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+.chuyende_vt6_item
+{
+    padding: 10px 0px;
+    clear: both;
+}
+
+/* cap 1 */
+.imgTop1
+{
+    float: left;
+}
+#chuyendemoinhat
+{
+    float: left;
+    padding: 0px 15px;
+    text-align: justify;
+}
+#demuc
+{
+    width: 295px;
+    float: left;
+    border-top: 5px solid #C7C8CA;
+    padding-top: 15px;
+}
+.new_demuc
+{
+    width: 295px;
+    float: left;
+    margin-top: 15px;
+}
+.title_demuc
+{
+    width: 205px;
+    float: left;
+    padding-left: 10px;
+}
+#chuyendecu
+{
+    width: 950px;
+    float: left;
+    margin: 0px 0px 10px 0px;
+}
+.chuyendetieptheo
+{
+    float: left;
+    border-top: 5px solid #C7C8CA;
+    padding-top: 10px;
+    width: 290px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+/* cap 3 */
+
+#comments .item-comment
+{
+    margin-bottom: 5px;
+}
+.comment-author
+{
+    font-weight: normal;
+    color: #777;
+}
+.comment-date
+{
+    font-size: 12px;
+}
+
+.adv-group .bannergroup .banneritem
+{
+    position: relative;
+}
+.adv-chitiettin .adv-right-top-1, .adv-chitiettin .adv-right-top-3, .adv-chitiettin .adv-right-top-2
+{
+}
+.adv-chitiettin .adv-left .bannergroup
+{
+    width: 65px;
+    float: left;
+    margin-left: 5px;
+}
+.adv-chitiettin .adv-left img
+{
+    width: 65px;
+    height: 418px;
+}
+
+
+/*Hinh anh*/
+.tin-anh select, .tin-anh input, .tin-anh textarea
+{
+    font-size: 1em;
+}
+.tin-anh .ad-description-title
+{
+    color: #535353;
+    line-height: 16px;
+    padding: 12px !important;
+    font-weight: normal;
+}
+.tin-anh h2
+{
+    margin-top: 1.2em;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 1px dotted #dedede;
+}
+.tin-anh h3
+{
+    margin-bottom: 10px;
+    padding: 0;
+}
+.tin-anh .example
+{
+    border: 1px solid #CCC;
+    background: #f2f2f2;
+    padding: 10px;
+}
+.tin-anh ul
+{
+    list-style-image: url(http://www.quybaovevaphattrienrungna.org/02_css/list-style.gif);
+}
+.tin-anh pre
+{
+    font-family: "Lucida Console" , "Courier New" , Verdana;
+    border: 1px solid #CCC;
+    background: #f2f2f2;
+    padding: 10px;
+}
+.tin-anh code
+{
+    font-family: "Lucida Console" , "Courier New" , Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+.tin-anh #gallery
+{
+    background: #333333;
+    width: 960px;
+}
+.tin-anh #descriptions
+{
+    position: relative;
+    height: 50px;
+    background: #EEE;
+    margin-top: 10px;
+    width: 640px;
+    padding: 10px;
+    overflow: hidden;
+}
+.tin-anh #descriptions .ad-image-description
+{
+    position: absolute;
+}
+.tin-anh #descriptions .ad-image-description .ad-description-title
+{
+    display: block;
+}
+
+
+.tin-anh .main-list-image
+{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.tin-anh .list-image-item
+{
+    margin-top: 10px;
+    width: 105%;
+}
+.tin-anh .list-image-item a
+{
+    display: block;
+    width: 184px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.tin-anh .list-image-item a img
+{
+    width: 176px;
+    height: 122px;
+    display: block;
+    margin-bottom: 5px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+
+.detail-news ol
+{
+    padding-left: 28px;
+}
+.detail-news
+{
+    overflow: hidden;
+}
+
+.pagination li
+{
+    display: block !important;
+    float: left !important;
+}
+.pagination li a, .pagination li span
+{
+    padding: 3px 6px;
+}
+.captionjs
+{
+    line-height: 0;
+    display: inline-block;
+}
+.captionjs figcaption
+{
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    border-top: none;
+    font-style: italic;
+    background: none repeat scroll 0 0 #D4DDE2;
+    text-align: center;
+}
+
+#feat
+{
+    width: 630px;
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+.featbig
+{
+    padding: 0 0 10px 0;
+    border-bottom: 1px dotted #CCC;
+}
+.featbig img
+{
+    float: left;
+    padding: 2px 14px 0 0;
+}
+#featsmall
+{
+    margin-top: 7px;
+    float: right;
+    width: 266px;
+}
+.featbig h2 a
+{
+    color: #1c9a1d;
+    outline: 0 none;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.featbig p
+{
+    color: #000;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 15px;
+    line-height: 1.4em;
+    margin: 0 0 0 !important;
+    padding: 0;
+}
+#featsmall h2
+{
+    border-top: 1px dashed #ddd;
+    line-height: 16px;
+    padding: 8px 0px;
+    margin: 0px;
+}
+.featbig h2
+{
+    font: 30px arial, verdana, sans-serif;
+    font-weight: normal;
+    line-height: 1.13em;
+    padding: 0px 0px 10px 0px;
+}
+#featsmall h2 a
+{
+    font-size: 12px;
+}
+#featsmall h2 img
+{
+    padding: 5px 5px 0px 0px;
+}
+.featbig h2 a
+{
+    color: #01458E;
+    outline: 0 none;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.home-post-wrap
+{
+    position: relative;
+    width: 205px;
+    height: 125px;
+    margin-left: 7px;
+    float: left;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 15px;
+}
+
+.home-post-wrap:first-child
+{
+    margin-left: 0px;
+}
+.thumbnail-div
+{
+    height: 83px;
+}
+.thumbnail-div img
+{
+    width: 100%;
+    height: 125px;
+}
+.home-post-wrap h2
+{
+    position: absolute;
+    background: url(../Images/transbg2.png) repeat;
+    bottom: 0;
+    border: 0;
+    font-weight: normal;
+    font-family: "Arvo" , "arial" ,serif;
+    margin: 0 !important;
+    padding: 4px 6px !important;
+    line-height: 11px !important;
+    min-width: 94%;
+}
+.home-post-wrap h2 a
+{
+    color: #f1f1f1;
+}
+.the2title
+{
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.summary-top-news
+{
+    max-height: 149px;
+    overflow: hidden;
+}
+
+.chungkhoan .banneritem, .hasshadow
+{
+    -moz-box-shadow: 0 0 3px #bbb;
+    -webkit-box-shadow: 0 0 3px #bbb;
+    box-shadow: 0 0 3px #bbb;
+}
+.img-top-hot
+{
+    width: 350px;
+    height: 222px;
+}
+
+.first-news a.content-img
+{
+    float: left;
+    margin: 0 10px 5px 0;
+    display: block;
+}
+.first-news img
+{
+    border: solid 1px #ccc;
+    padding: 2px;
+    width: 125px !important;
+    height: 76px;
+}
+.info-firstnews a
+{
+    padding: 0 0 5px 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    display: block;
+    color: #01458E;
+    text-align: justify;
+}
+
+.info-firstnews a:hover
+{
+    color: #DA251E;
+}
+
+.info-firstnews p
+{
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0px;
+    text-align: justify;
+}
+.first-news
+{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.details-first
+{
+    background: url(../Images/bg-details.png) no-repeat;
+    display: block;
+    width: 54px;
+    height: 18px;
+    position: absolute;
+    right: -10px;
+    bottom: 5px;
+}
+.details-first:hover
+{
+    background-position: left bottom;
+}
+.list-docnhieu .content-img img
+{
+    height: 42px;
+    width: 59px;
+    float: left;
+    margin-right: 5px;
+    padding: 2px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+.list-docnhieu div
+{
+    clear: both;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.list-docnhieu div:hover
+{
+    color:Blue;
+}
+
+.list-docnhieu div:first-child
+{
+    border-top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: justify;
+}
+.list-docnhieu div:first-child:hover
+{
+    color:Blue;
+}
+
+.video-nhieu-nhat
+{
+    padding: 10px;
+    background: #666;
+    margin-bottom: 15px;
+}
+.video-nhieu-nhat .title-section
+{
+    background: #7d7d7d;
+    margin-bottom: 10px;
+}
+#playvideo
+{
+    position: relative;
+    background: #000;
+}
+#playvideo img, #playvideo iframe
+{
+    width: 280px;
+    height: 185px;
+    margin: 0px;
+    border: 0px;
+}
+#playvideo .play-bt
+{
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute;
+    top: 38%;
+    left: 42%;
+    cursor: pointer;
+}
+.chungkhoan .banneritem
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.tamsu
+{
+    float: right;
+    width: 335px !important;
+    clear: none !important;
+}
+.tamsu .catnews-right
+{
+    float: none;
+    height: 233px;
+    overflow-y: scroll;
+    width: 315px !important;
+    padding: 0px 10px;
+    padding-right: 0px;
+    margin: 10px 0px;
+}
+.adver-middle
+{
+    width: 290px;
+    height: 290px;
+    float: left;
+    overflow: hidden;
+}
+.adver-middle img
+{
+    width: 290px;
+    height: 290px;
+}
+
+.topnews .wrap-listing
+{
+    overflow: hidden;
+    width: 600px;
+    margin-bottom: 20px;
+}
+.topnews-nav
+{
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-top: solid 1px #ddd;
+    margin: 0px;
+    margin-top: 10px;
+}
+.topnews .wrap-listing .story
+{
+    float: left;
+    width: 189px;
+    margin-right: 14px;
+}
+
+.topnews .wrap-listing .story.last
+{
+    margin: 0;
+}
+.topnews .story .photo
+{
+    margin-bottom: 5px;
+}
+.topnews .story .title
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+}
+.topnews .story .title a
+{
+    color: #01458E;
+}
+.topnews .story .photo img
+{
+    border: solid 1px #ccc;
+    padding: 3px;
+}
+.topnews-nav a
+{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    text-indent: -2000em;
+    margin-right: 5px;
+    background-image: url(http://www.quybaovevaphattrienrungna.org/Images/sprites.png);
+    background-position: -262px -53px;
+}
+.topnews-nav a.activeSlide
+{
+    background-position: -250px -53px;
+}
+.topnews .main-catnews
+{
+    padding: 10px 20px !important;
+}
+
+.news_home a
+{
+    color: #000;
+}
+.news_category_content .frame_cat
+{
+    margin-top: 10px;
+}
+.frame_cat_normal_0, .frame_cat_normal_1
+{
+    width: 203px;
+    margin-right: 10px;
+}
+.frame_cat_normal_2
+{
+    width: 193px;
+}
+.frame_normal
+{
+    position: relative;
+    float: left;
+}
+.frame_head_main_cat
+{
+    font-size: 15px;
+}
+.frame_normal .frame_head
+{
+    border-bottom: 1px dotted #B3B3B3;
+    font-size: 17px;
+    font-weight: bold;
+    height: 204px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding-bottom: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 192px;
+    height: 43px;
+}
+.frame_normal .frame_body
+{
+    border-right: 1px dotted #B3B3B3;
+    padding-right: 8px;
+    height: 287px;
+    overflow: hidden;
+}
+.frame_normal .frame_head_sub_cat
+{
+    margin-top: 7px;
+}
+.frame_normal .frame_head .frame_head_sub_cat a
+{
+    font-size: 12px;
+    text-transform: none;
+    color: #555;
+}
+.frame_normal .frame_head .frame_head_sub_cat .sub_0
+{
+    border-right: 1px solid #CCCCCC;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.cat_normal .first_item
+{
+    position: relative;
+}
+.cat_normal .middle_item
+{
+    background: url("../Images/arrow-red.png") no-repeat scroll left 10px transparent;
+    font-weight: normal;
+    padding: 5px 0 0 12px;
+    font-size: 11px;
+}
+.cat_normal .first_item .title
+{
+    background: url("http://www.quybaovevaphattrienrungna.org/Images/bg_trans.png") repeat scroll right center transparent;
+    bottom: 0;
+    padding: 5px;
+    position: absolute;
+    text-align: justify;
+    left: 0;
+    min-width: 95%;
+}
+.cat_normal .first_item .title a
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+.first_item img
+{
+    width: 100%;
+}
+.dong-su-kien .title-section
+{
+    font-size: 13px;
+}
+.ds-tieudiem-video-title .title-section
+{
+    font-size: 13px;
+}
+.tin-doc-nhieu, .dong-su-kien-group .leading-right
+{
+    width: 240px !important;
+}
+
+.wrapper-content
+{
+    padding: 10px !important;
+    background: #fff;
+}
+
+/* REGISTER - STORE ***********************************/
+.box_register
+{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    float: left;
+    padding: 0;
+    margin-bottom: 10px;
+    height: 495px;
+}
+.box_register .box_title
+{
+    background-color: #F5F5F1;
+    border-bottom: 1px solid #DBDBDB;
+    border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 36px;
+    padding-left: 10px;
+    color: #666;
+}
+.box_register .box_content
+{
+    padding: 10px 5px 10px 100px;
+}
+.box_register .box_content .box_form
+{
+    padding: 5px 0;
+}
+.box_register .item_form
+{
+    padding: 5px 0;
+    float: left;
+    width: 100%;
+}
+.box_register .item_form label
+{
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 26px;
+    margin-right: 10px;
+    text-align: right;
+    width: 140px;
+    font-size: 14px;
+}
+.box_register .item_form .box_input
+{
+    float: left;
+}
+.box_register .item_form input.text
+{
+    border-color: #C2C2C2 #E6E6E6 #E6E6E6 #C2C2C2;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 0.2em;
+    padding: 6px;
+}
+.box_register .item_form .box_input
+{
+    float: left;
+}
+
+.btn-submit-store
+{
+    margin: 10px 0 20px 250px;
+    width: 150px !important;
+}
+.title-cat-di
+{
+    text-align: justify;
+    line-height: 17px;
+}

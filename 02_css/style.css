@@ -1,0 +1,1975 @@
+/*------------------RUNG-----------------------------------------*/
+body 
+{
+	margin:0px;
+	overflow:auto;
+	font-family:Arial;
+	font-size:12px;
+	background-color:#d5d5d5;
+}
+.Top1banner_bg
+{
+	background-image:url('../images/Topbanner.jpg');
+	background-repeat:no-repeat;
+	width:990px;
+	height:142px;
+	border-bottom:1px solid #fff;
+	border-top:5px solid #fff;
+	border-left:5px solid #fff;
+	border-right:5px solid #fff;
+}
+.NewsTop1OnHome
+{
+	
+}
+.Top1Menu_bg
+{
+	background-image:url('../images/TopMenu_Bg.jpg');
+	background-repeat:repeat-x;
+	height:45px;
+	width:1000px;
+	border-left:5px solid #fff;
+	border-right:5px solid #fff;
+}
+.Bg_left
+{
+	background-image:url('http://www.quybaovevaphattrienrungna.org/images/Bg_left.jpg');
+	background-repeat:repeat-y;
+	width:4px;
+}
+.Bg_Right
+{
+	background-image:url('http://www.quybaovevaphattrienrungna.org/images/Bg_Right.jpg');
+	background-repeat:repeat-y;
+	width:4px;
+}
+.NewPlay
+{
+	height:28px;
+	width:1000px;
+	background-color:#e5e5e5;
+	border-left:5px solid #fff;
+	border-right:5px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.Footer
+{
+  background-color: #1c9a1d;
+    height: 90px;
+    width: 990px;
+}
+.Content
+{
+	width:1000px;
+	background-color:#fff;
+	border-left:5px solid #fff;
+	border-right:5px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.NewsTop1OnHome
+{
+	padding-top:6px;
+	text-align:justify;
+	padding-right:5px;
+}
+
+.NewsTop1OnHome a 
+{
+	color:#1d991d;
+	text-decoration:none;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	
+	text-transform:uppercase;
+	
+}
+.NewsTop1OnHome a:link 
+{
+	color:#1d991d;
+	text-decoration:none;
+}
+.NewsTop1OnHome a:hover
+{
+	color:#1d991d;
+	text-decoration:none;
+}
+.NewsTop1OnHome a:visited
+{
+	color:#1d991d;
+	text-decoration:none;
+}
+
+
+
+
+/*-----------------------------------------------------------*/
+a 
+{
+	color:#4c4545;
+}
+a:link 
+{
+	color:#4c4545;
+}
+a:hover
+{
+	color:#4c4545;
+}
+a:visited
+{
+	color:#4c4545;
+}
+.borderCCC
+{
+	font-family:Arial;
+    border:solid 1px #ccc;
+    padding:5px;
+    text-align:justify;    
+    background-color:#f3f7f9;
+    color:#383a3b;
+}
+.borderCCC1
+{
+	background-color:#FFF;
+    border:solid 1px #ccc;
+    padding-left:5px;
+    font-weight:bold;
+}
+.NADOST_LeftBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_LeftBg.png");
+	background-repeat:repeat-y;
+	width:7px;
+}
+.NADOST_RightBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_RightBg.png");
+	background-repeat:repeat-y;
+	width:7px;
+}
+.NADOST_TopBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_TopBg.png");
+	background-repeat:no-repeat;
+	height:134px;
+}
+.NADOST_MenuTop
+{
+	height:45px;
+}
+.NADOST_SubMenuTop
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_SubMenuTop.png");
+	background-repeat:no-repeat;
+	height:32px;
+	padding-top:8px;
+	font-size:12px;
+	font-family:Arial;
+}
+.NADOST_SubMenuTop1
+{
+	width:240px;
+	padding-top:8px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	
+}
+.NADOST_MsgBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_MsgBg.png");
+	background-repeat:no-repeat;
+	height:80px;
+	width:300px;
+	margin-bottom:5px;
+}
+.NADOST_GazetteBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_GazetteBg.png");
+	background-repeat:no-repeat;
+	height:90px;
+	width:300px;
+}
+.NADOST_PABg
+{
+	margin-top:5px;
+	background-image:url("../images/NADOST_PABg.png");
+	background-repeat:no-repeat;
+	height:90px;
+	width:300px;
+}
+.NADOST_MOBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_MOBg.png");
+	background-repeat:no-repeat;
+	height:90px;
+	width:300px;
+}
+.NADOST_OPBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_OPBg.png");
+	background-repeat:no-repeat;
+	height:100px;
+	width:300px;
+}
+.NADOST_EDUBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_EDUBg.png");
+	background-repeat:no-repeat;
+	height:73px;
+	width:300px;
+}
+.NADOST_LibolBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_LibolBg.png");
+	background-repeat:no-repeat;
+	height:73px;
+	width:300px;
+}
+.NADOST_NABg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_NABg.png");
+	background-repeat:no-repeat;
+	height:66px;
+	width:300px;
+}
+.NADOST_BestViewBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_BestViewBg.png");
+	background-repeat:no-repeat;
+	height:25px;
+	width:300px;
+}
+.NADOST_BestViewBg1
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_BestViewBg1.png");
+	background-repeat:no-repeat;
+	height:25px;
+	width:300px;
+}
+.NADOST_WebLinkBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_WebLinkBg.png");
+	background-repeat:no-repeat;
+	height:57px;
+	width:300px;
+}
+.NADOST_OnlineBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_OnlineBg.png");
+	background-repeat:no-repeat;
+	height:140px;
+	width:300px;
+}
+.NADOST_StaticsBg
+{
+	margin-top:5px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_StaticsBg.png");
+	background-repeat:no-repeat;
+	height:140px;
+	width:300px;
+}
+.NADOST_FotterBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_FotterBg.png");
+	background-repeat:no-repeat;
+	background-position:3px 0px;
+	height:150px;	
+}
+.NADOST_MainFotterBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_MainFotterBg.png");
+	background-repeat:no-repeat;
+	height:148px;
+	color:White;
+}
+.NADOST_HotNewsBg
+{
+	background-position:0px 4px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_HotNewsBg.png");
+	background-repeat:no-repeat;
+	height:26px;
+	width:290px;
+	color:White;
+	background-color:#FFF;
+}
+
+.NADOST_NewItem
+{
+	background-image:url("../images/NADOST_NewItem.png");
+	background-repeat:no-repeat;
+	background-position:3px center;
+	font-size:12px;
+	font-family:Arial;
+	color:#024176;
+	text-decoration:none;
+	text-align:justify;
+	padding-left:15px;
+	padding-right:5px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:dotted 1px #e6e9ec;
+	line-height:16px;
+}
+.NADOST_NewItem A
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItem A:link
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItem A:hover
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItem A:visited
+{
+	color:#024176;
+	text-decoration:none;
+}
+
+.NADOST_NewItem1
+{
+	background-image:url("../images/NADOST_NewItem.png");
+	background-repeat:no-repeat;
+	background-position:3px center;
+	font-size:11px;
+	font-family:Arial;
+	color:Black;
+	text-decoration:none;
+	text-align:justify;
+	padding-left:15px;
+	padding-right:5px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-bottom:dotted 1px #e6e9ec;
+	text-transform:uppercase;
+	width:210px;
+}
+.NADOST_NewItem1 A
+{
+	color:Black;
+	text-decoration:none;
+}
+.NADOST_NewItem1 A:link
+{
+	color:Black;
+	text-decoration:none;
+}
+.NADOST_NewItem1 A:hover
+{
+	color:#1c9a1d;
+	text-decoration:none;
+}
+.NADOST_NewItem1 A:visited
+{
+	color:Black;
+	text-decoration:none;
+}
+.NADOST_NewItemHotIntro
+{
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#616161;
+	text-align:justify;
+}
+.NADOST_NewItemHot
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#024176;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:justify;
+}
+.NADOST_NewItemHot A
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot A:link
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot A:hover
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot A:visited
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot3
+{
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:2px;
+	font-size:11px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#024176;
+	text-decoration:none;
+	text-align:justify;
+	vertical-align:top;
+}
+.NADOST_NewItemHot3 A
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot3 A:link
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot3 A:hover
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_NewItemHot3 A:visited
+{
+	color:#024176;
+	text-decoration:none;
+}
+.NADOST_HomeTwoSubjectTitle
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	height:30px;
+	padding-left:30px;
+	padding-top:0px;	
+	text-transform:uppercase;
+	width:100%;
+	line-height:30px;
+}
+.NADOST_Title_White
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	height:36px;
+	padding-left:20px;
+}
+.NADOST_Title_Gray
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#2376a2;
+	text-decoration:none;
+	height:44px;
+	padding-left:15px;
+}
+.NADOST_Title_Gray A
+{
+	color:#2376a2;
+	text-decoration:none;
+}
+.NADOST_Title_Gray A:link
+{
+	color:#2376a2;
+	text-decoration:none;
+}
+.NADOST_Title_Gray A:hover
+{
+	color:#2376a2;
+	text-decoration:none;
+}
+.NADOST_Title_Gray A:visited
+{
+	color:#2376a2;
+	text-decoration:none;
+}
+.NADOST_Title_Bold
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	text-align:justify;
+	color:#208e09;
+	height:36px;
+	padding-right:8px;
+	padding-left:4px;
+	text-decoration:none;
+}
+.NADOST_Title_Bold A
+{
+	color:#208e09;
+	text-decoration:none;
+}
+.NADOST_Title_Bold A:link
+{
+	color:#208e09;
+	text-decoration:none;
+}
+.NADOST_Title_Bold A:hover
+{
+	color:#494d4f;
+	text-decoration:none;
+}
+.NADOST_Title_Bold A:sivited
+{
+	color:#208e09;
+	text-decoration:none;
+}
+.NADOST_Title_Intro_Bold
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	text-align:justify;
+	color:#494d4f;
+	height:36px;
+	padding-right:10px;
+	padding-left:10px;
+}
+.NADOST_Img_Border
+{	
+	margin:4px;
+	padding:3px;
+	border:Solid 3px #e9eef2;
+	width:188px;
+	height:132px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NoImg.jpg");
+}
+.NADOST_Img_Border_Larger
+{	
+	margin-top:-6px;
+	padding:3px;
+	border:Solid 3px #e9eef2;
+	width:155px;
+	height:115px;
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NoImg.jpg");
+}
+.NADOST_Intro
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#494d4f;
+	padding-right:10px;
+}
+.NADOST_Intro_List
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#494d4f;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.list_Space_1
+{
+	border-bottom:none;
+	height:10px;
+	text-align:right;
+	color:#615b5b;
+}
+.list_Space_2
+{
+	color:#cccccc;
+	height:10px;
+}
+.NADOST_NewDetail
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#494d4f;
+	padding-right:10px;
+	width:720px;
+}
+.SubjectTitle
+{
+	font-size:12px;
+	font-weight:bold;	
+	padding-top:12px;
+	padding-left:12px;
+	padding-right:0px;
+	padding-bottom:5px;
+	color:#208e09;
+	text-decoration:none;
+	text-align:justify;
+	border-bottom:dotted 2px #a3d4f7;
+	margin-left:20px;
+}
+.imgHotNews
+{
+	width:445px;
+	height:270px;
+	border:none;
+}
+.imgHotNews3
+{
+	border:solid 3px #ecf1f4;
+	width:130px;
+	height:84px;
+	margin-right:5px;
+}
+.NewsTop1OnHome p
+{
+	height:6px;
+	
+}
+.imgHotNews13
+{
+	margin-left:9px;
+	border:solid 3px #ecf1f4;
+	width:160px;
+	height:100px;
+	margin-right:5px;
+}
+.NADOST_NewsCatBg
+{
+	background-image:url("../images/NADOST_NewsCatBg.png");
+	 background-position: -5px 0;
+	background-repeat:no-repeat;
+	width:704px;
+	height:20px;
+	background-color:#FFF;
+	margin-top:5px;
+}
+.NADOST_NewsCat
+{
+ color: #1a9b1d;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-left: 5px;
+    text-align: justify;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-right: 5px;
+} 
+.NADOST_NewsCat A
+{
+	color:#1a9b1d;
+	text-decoration:none;
+}
+.NADOST_NewsCat A:link
+{
+	color:#1a9b1d;
+	text-decoration:none;
+}
+.NADOST_NewsCat A:hover
+{
+	color:#1a9b1d;
+	text-decoration:none;
+}
+.NADOST_NewsCat A:visited
+{
+	color:#1a9b1d;
+	text-decoration:none;
+}
+
+.NewOnHomecss
+{
+	font-family:Arial;
+	font-size:12px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.NewOnHomecss A
+{
+	color:#032d67;
+	text-decoration:none;
+}
+.NewOnHomecss A:link
+{
+	color:#032d67;
+	text-decoration:none;
+}
+.NewOnHomecss A:hover
+{
+	color:#032d67;
+	text-decoration:none;
+}
+.NewOnHomecss A:visited
+{
+	color:#032d67;
+	text-decoration:none;
+}
+.NADOST_NewsCatDatePost
+{
+	font-family:Arial;
+	font-size:11px;
+	font-style:italic;
+	text-align:right;
+	color:#bf98ab;
+	padding-right:5px;
+	line-height:24px;	   
+} 
+.NADOST_NewsCatIntro
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#545454;
+	line-height:17px;
+	padding-left:5px;
+	   padding-right: 5px;
+} 
+.NADOST_NewsCatIntro_1
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#545454;
+	padding-left:13px;
+	padding-right:6px;
+} 
+.LineTop1OnHome
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/LineTop1OnHome.png");
+	background-position:0 center;
+	background-repeat:repeat-x;
+	height:4px;
+}
+.NADOST_SameCatBg
+{
+	height:28px;
+	background-image:url("../images/NADOST_SameCatBg.png");
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+}
+.NADOST_MagazineBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_MagazineBg.png");
+	background-repeat:no-repeat;
+	width:671px;
+	height:339px;
+}
+.NADOST_TVBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_TVBg.png");
+	background-repeat:no-repeat;
+	width:671px;
+	height:262px;
+}
+.NADOST_TVBg1
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_TVBg1.png");
+	background-repeat:no-repeat;
+	width:671px;
+	height:262px;
+}
+.NADOST_NewsBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/NADOST_NewsBg.png");
+	background-repeat:no-repeat;
+	width:671px;
+	height:202px;
+}
+.NADOST_Top3News
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#545454;
+	padding-left:28px;
+	padding-right:10px;
+}
+.NADOST_Top3News li
+{
+	font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+	color:#545454;
+	padding-left:0px;
+	padding-bottom:5px;
+	text-decoration:none;
+}
+.NADOST_Top3News li A
+{
+	color:#545454;
+	text-decoration:none;
+}
+.NADOST_Top3News li A:link
+{
+	color:#545454;
+	text-decoration:none;
+}
+.NADOST_Top3News li A:hover
+{
+	color:red;
+	text-decoration:none;
+}
+.NADOST_Top3News li A:visited
+{
+	color:#545454;
+	text-decoration:none;
+}
+.NADOST_Top2News
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	color:#545454;
+	padding-left:18px;
+	padding-right:10px;
+	display:inline;
+	text-decoration:none;
+}
+.NADOST_Top2News A
+{
+	text-decoration:none;
+	color:#545454;
+}
+.NADOST_Top2News A:link
+{
+	text-decoration:none;
+	color:#545454;
+}
+.NADOST_Top2News A:hover
+{
+	text-decoration:none;
+	color:#545454;
+}
+.NADOST_Top2News A:visited
+{
+	text-decoration:none;
+	color:#545454;
+}
+.ATOrderBackground
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATCat.png");
+	background-repeat:no-repeat;
+}
+.bgTop1
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/BgTop1.jpg");
+	background-repeat:repeat-x;
+	height:26px;
+}
+.bbTop1Space
+{
+	border-left:dotted 1px #CCC;
+	width:10px;
+}
+.ATUser
+{
+	text-align:center;
+	font-size:11px;
+	color:#5b5b5b;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration:none;
+}
+.ATUser A
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.ATUser A:link
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.ATUser A:hover
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.ATUser A:visited
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.bgTop1Text
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#5b5b5b;
+	padding-left:5px;
+	padding-right:5px;
+}
+.bgTop1Text A
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.bgTop1Text A:link
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.bgTop1Text A:hover
+{
+	color:red;
+	text-decoration:none;
+}
+.bgTop1Text A:visited
+{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+.bgTop2
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/BgTop2.jpg");
+	background-repeat:repeat-x;
+	height:104px;
+}
+.ATTopMenuBegin
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATTopMenuBegin.png");
+	height:41px;
+	width:50px;
+}
+.ATTopMenuEnd
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATTopMenuEnd.png");
+	height:41px;
+	width:50px;
+}
+.ATTopMenuSpace
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATTopMenuSpace.png");
+	height:41px;
+	width:11px;
+}
+.ATArrowBottom
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATArrowBottom.png");
+	height:41px;
+	width:16px;
+}
+.ATTopMenu
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATTopMenu.png");
+	height:41px;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration:none;
+	cursor:hand;
+}
+.ATTopMenu A
+{
+	text-decoration:none;
+	color:#FFF;
+}
+.ATTopMenu A:link
+{
+	text-decoration:none;
+	color:#FFF;
+}
+.ATTopMenu A:hover
+{
+	text-decoration:underline;
+	color:#FFF;
+}
+.ATLeftBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATLeftBg.png");
+	background-repeat:repeat-y;
+	width:10px;
+}
+.ATRightBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightBg.png");
+	background-repeat:repeat-y;
+	width:10px;
+}
+.ATBottomBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBottomBg.png");
+	background-repeat:no-repeat;
+	background-position:3px 0px;
+	height:10px;
+}
+.ATBgFooter1
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBgFooter1.png");
+	background-repeat:repeat-x;
+	height:40px;
+}
+.ATBgFooter2
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBgFooter2.png");
+	background-repeat:repeat-x;
+	height:100px;
+}
+.ATBgFooter3
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBgFooter3.png");
+	background-repeat:repeat-x;
+	height:38px;
+	border-bottom:dotted 1px #f1eeee;
+	font-size:11px;
+	font-weight:bold;
+	color:#6b6b6b;
+}
+.ATBgFooter2Text
+{
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#2b2929;
+}
+.ATBgFooter2Text A
+{
+	text-decoration:none;
+	color:#2b2929;
+}
+.ATBgFooter2Text A:link
+{
+	text-decoration:none;
+	color:#2b2929;
+}
+.ATBgFooter2Text A:hover
+{
+	text-decoration:none;
+	color:#2b2929;
+}
+.ATBgFooter2Text A:visited
+{
+	text-decoration:none;
+	color:#2b2929;
+}
+.ATBottomItemBegin
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBottomItemBegin.png");
+	background-repeat:no-repeat;
+	width:10px;
+	height:23px;
+}
+.ATBottomItemEnd
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBottomItemEnd.png");
+	background-repeat:no-repeat;
+	width:10px;
+	height:23px;
+}
+.ATBottomItem
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBottomItem.png");
+	background-repeat:repeat-x;
+	height:23px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+}
+.ATRightVideoHeader
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightVideoHeader.png");
+	background-repeat:no-repeat;
+	height:44px;
+}
+.ATRightSearchHeader
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightSearchHeader.png");
+	background-repeat:no-repeat;
+	height:44px;
+}
+.ATRightSearchBg
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightSearchBg.png");
+	background-repeat:repeat-y;
+	text-align:center;
+	font-size:11px;
+	font-weight:bold;
+	height:24px;
+	padding:5px;
+}
+.ATRightSearchBgText
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightSearchBg.png");
+	background-repeat:repeat-y;
+	text-align:left;
+	font-size:11px;
+	padding-left:17px;
+	font-weight:bold;
+	height:21px;
+	padding-top:5px;
+	padding-right:5px;
+	padding-bottom:1px;
+}
+.ATRightSearchFotter
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRightSearchFotter.png");
+	background-repeat:repeat-y;
+	height:24px;
+}
+.ATRight5TopNews
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRight5TopNews.png");
+	background-repeat:no-repeat;
+	height:364px;
+	padding-left:12px;
+}
+.ATBestSale
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATBestSale.png");
+	background-repeat:no-repeat;
+	height:588px;
+	padding-left:12px;
+}
+.ATSupport
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATSupport.png");
+	background-repeat:no-repeat;
+	height:407px;
+}
+.ATForeignCurrency
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATForeignCurrency.png");
+	background-repeat:no-repeat;
+	height:353px;
+}
+.ATPartner
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATPartner.png");
+	background-repeat:no-repeat;
+	height:470px;
+}
+.ATRegReceiEmail
+{
+	background-image:url("http://www.quybaovevaphattrienrungna.org/images/ATRegReceiEmail.png");
+	background-repeat:no-repeat;
+	height:165px;
+}
+/* --- TVSB2B.MASTER STYLE --- */
+.newsImgBox
+{
+	width:50px;
+	height:50px;
+	border:solid 1px #f5eeee;
+	padding:2x;
+}
+.newsText
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#515151;
+	padding:4px;
+	padding-top:4px;
+	padding-right:6px;
+	vertical-align:top;	
+	text-align:justify;
+	text-decoration:none;
+}
+.newsText A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsText A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsText A:hover
+{
+	color:#515151;
+	text-decoration:underline;
+}
+.newsText A:visited
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsIntroText
+{
+	font-size:12px;
+	color:#515151;
+	padding:4px;
+	padding-top:4px;
+	padding-right:6px;
+	vertical-align:top;	
+	text-align:justify;
+	text-decoration:none;
+}
+.newsIntroText A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsIntroText A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsIntroText A:hover
+{
+	color:#515151;
+	text-decoration:underline;
+}
+.newsIntroText A:visited
+{
+	color:#515151;
+	text-decoration:none;
+}
+/* PRODUCT STYLE */
+.smallProductImgBox
+{
+	width:55px;
+	height:50px;
+	border:solid 2px #f5eeee;
+	padding:2px;
+}
+.newsText
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#515151;
+	padding:4px;
+	padding-top:4px;
+	padding-right:6px;
+	vertical-align:top;	
+	text-align:justify;
+	text-decoration:none;
+}
+.newsText A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsText A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.newsText A:hover
+{
+	color:#515151;
+	text-decoration:underline;
+}
+/* =======================*/
+.ViewAll
+{
+	font-size:11px;
+	font-weight:bold;
+	text-align:right;
+	color:#9f0f0d;
+	text-decoration:none;
+}
+.ViewAll A
+{
+	color:#9f0f0d;
+	text-decoration:none;
+}
+.ViewAll A:link
+{
+	color:#9f0f0d;
+	text-decoration:none;
+}
+.ViewAll A:hover
+{
+	color:#9f0f0d;
+	text-decoration:underline;
+}
+.NewsTitle
+{
+	font-size:15px;
+	font-weight:bold;	
+	padding-top:12px;
+	padding-left:12px;
+	padding-right:0px;
+	padding-bottom:5px;
+	color:#515151;
+	text-decoration:none;
+	text-align:justify;
+}
+.NewsTimePost
+{
+	font-size:11px;
+	padding-right:10px;
+	padding-bottom:10px;
+	color:#515151;
+	text-align:right;
+	font-style:italic;
+}
+.NewsTitle A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsTitle A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsTitle A:hover
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsIntro
+{
+	font-size:13px;
+	font-weight:bold;
+	color:#515151;	
+	padding-right:0px;
+	padding-bottom:10px;
+	text-align:justify;
+	font-style:italic;
+}
+.NewsContent
+{
+	font-size:12px;
+	color:#515151;	
+	padding-right:0px;
+	padding-bottom:10px;
+	text-align:justify;
+}
+.NewsMore1
+{
+	font-weight:bold;
+	font-size:12px;
+	color:#515151;
+	padding-top:30px;
+	padding-left:10px;
+	padding-right:0px;
+	padding-bottom:10px;
+	margin-bottom:5px;
+	text-align:justify;
+	text-transform:uppercase;
+	border-bottom:dotted 1px red;
+}
+.NewsMore1Item
+{
+  background-image: url("../images/arrow.gif");
+    background-position: 5px 11px;
+    background-repeat: no-repeat;
+    color: #515151;
+    font-size: 12px;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    padding-top: 3px;
+    text-align: justify;
+    text-decoration: none;
+}
+.NewsMore1Item A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsMore1Item A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsMore1Item A:hover
+{
+	color:#515151;
+	text-decoration:none;
+}
+.NewsMore1Item A:visited
+{
+	color:#515151;
+	text-decoration:none;
+}
+.ATProductHomeTitle
+{
+	height:46px;
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	vertical-align:middle;
+	color:#3d3d3d;
+	display:block;
+	line-height:46px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.ATProductHomeImageBox
+{
+	display:block;
+	padding-top:4px;
+    height:112px;
+    width:165px;
+    margin-top:2px;
+    margin-left:5px;
+    border:dotted 1px #f1e6e6;
+    text-align:center;
+    vertical-align:middle;    
+}
+.ATProductHomeMainBorder
+{
+    width: 177px;
+    height: 233px;
+    margin-right:2px;
+    margin-left:1px;
+    padding-left:2px;
+    background: url(http://www.quybaovevaphattrienrungna.org/Images/Khung_bankg.png)no-repeat;
+}
+.ATProductHomeContent
+{
+    height: 110px;
+}
+.ATProductHomePrice
+{
+    height:20px;
+    width:105px;
+    margin-left:5px;
+    margin-top:9px;
+    padding-left:50px;
+    padding-top:3px;
+    color:#fe0002;
+    font-size:13px;
+    font-weight:bold;
+}
+.ATProductHomePriceText
+{
+    padding-top: 1px;
+    padding-left: 2px;
+}  
+.ATListProductHeader
+{
+	width:728px;
+	height:35px;
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/ATListProductHeader.png);
+	background-repeat : no-repeat;
+}
+.NumberPage
+{	
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	border:solid 1px #CCC;
+	height:21px;
+	width:20px;
+	padding-top:1px;
+	padding-left:6px;
+	padding-right:6px;
+	text-decoration:none;
+	color:#544b4b;
+	background-color:#f6eeee;
+}
+.NumberPage A
+{
+	text-decoration:none; 
+	color:#544b4b;
+}
+.NumberPage A:link
+{
+	text-decoration:none; 
+	color:#544b4b;
+}
+.NumberPage A:actived
+{
+	text-decoration:none; 
+	color:red;
+}
+.NumberPageBorder
+{
+	margin-top:0px;
+}
+.NumberPageBorder A
+{
+	text-decoration:none; 
+	color:#544b4b;
+}
+.NumberPageBorder A:link
+{
+	text-decoration:none; 
+	color:#544b4b;
+}
+.NumberPageBorder A:hover
+{
+	text-decoration:none; 
+	color:#544b4b;
+}
+.NumberPageBorder A:actived
+{
+	text-decoration:none; 
+	color:red;
+}
+.ATDataList
+{
+	text-align:center;
+	width:726px;
+	margin-left:-4px;
+}
+td
+{
+	font-size:12px;
+	font-family:Arial;
+}
+.textWhite
+{
+	color:#faf3f3;
+}
+.ddlStyle
+{
+	border: solid 1px #f4e9e9;
+}
+a
+{
+	color:Red;
+}
+a:link
+{
+	color:Red;
+}
+a:hover
+{
+	color:Red;
+}
+a:actived
+{
+	color:Red;
+}
+.GroupName
+{
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	vertical-align:middle;
+	color:#3d3d3d;
+	padding-top:12px;
+}
+.ATSupportHeader
+{
+	width:730px;
+	height:49px;
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/ATSupportHeader.png);
+	background-repeat : no-repeat;
+}
+.ATSupportBody
+{
+	width:730px;
+	height:70px;
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/ATSupportBody.png);
+	background-repeat : no-repeat;
+	text-align:center;
+}
+.ATSupportFotter
+{
+	width:730px;
+	height:24px;
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/ATSupportFotter.png);
+	background-repeat : no-repeat;
+}
+.link_yahoo
+{
+	font-size:11px;
+	font-weight:bold;
+	color:#3d3d3d;
+}
+.link_yahoo A
+{
+	color:#3d3d3d;
+}
+.link_yahoo A:link
+{
+	color:#3d3d3d;
+}
+marquee
+{
+	margin-left:60px;
+	width:524px;
+	color:#797575;
+}
+marquee a
+{
+	color:#797575;
+	font-weight:bold;
+}
+marquee a:link
+{
+	color:#797575;
+}
+marquee a:hover
+{
+	color:#797575;
+}
+marquee a:actived
+{
+	color:#797575;
+}
+marquee a:visited
+{
+	color:#797575;
+}
+.ProductPrice
+{
+    color:#fe0002;
+    font-size:13px;
+    font-weight:bold;
+}
+.textContact
+{
+    color:#5c5c5c;   
+    font-size:12px;
+    font-weight:bold; 
+}
+.textBoxContact
+{
+    border:solid 1px #969696;
+    height:24px;
+    line-height:24px;
+    font-size:14px;  
+    color:#747474;
+    font-weight:bold;
+}
+.textArea
+{
+    border:solid 1px #969696;
+    color:#747474;
+    overflow:hidden;
+    font-size:13px;
+    font-family:Arial;  
+}
+.titleDefault
+{
+	background-color:#c12324;
+    font-size:12px;
+    font-weight:bold; 
+    text-transform:uppercase;  
+    padding-left:8px;
+    background: url(../Images/ATHeaderBg.png);
+	background-repeat : no-repeat;
+	padding-top:5px;
+	color:#208e09;
+}
+.tdText
+{
+	font-family:Arial;
+	font-size:11px;
+    color:#3a3636; 
+}
+.AdsPlaceHoder
+{
+	font-family:Arial;
+	font-size:11px;
+    color:#c5c5c5; 
+    text-align:center;
+    border:dotted 1px #CCC;
+    width:724px;
+    margin-left:5px;
+}
+.btnButton
+{
+	background-color:#c12324;
+	color:#FFF;
+	font-family:Arial;
+	font-size:12px;
+	line-height:26px;
+	height:22px;
+	border:solid 1px #807f84;
+	padding-bottom:6px;
+}
+.supportItem
+{
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#056bb3;
+}
+.supportItem A
+{
+	text-decoration:none;
+	color:#056bb3;
+}
+.supportItem A:link
+{
+	text-decoration:none;
+	color:#056bb3;
+}
+.supportItem A:visited
+{
+	text-decoration:none;
+	color:#056bb3;
+}
+.supportSpace
+{
+    background: url(http://www.quybaovevaphattrienrungna.org/Images/supportSpace.png);
+	background-repeat : no-repeat;
+	background-position:0px 26px;
+}
+.supportHotline
+{
+	padding-left:44px;
+	color:Blue;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+}
+.Online
+{
+	height:60px;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	margin:20px;
+	padding-top:25px;
+}
+.OnlineItem
+{
+	font-family:Arial;
+	font-size:11px;
+	color:#787e82;
+	padding-left:90px;
+	width:65px;
+	text-align:right;
+	padding-right:5px;
+}
+.OnlineItem1
+{
+	padding-top:2px;
+	font-family:Arial;
+	font-size:10px;
+	color:#787e82;
+}
+.pageNavigatorDataGrid 
+{
+	margin-top:5px;
+	WHITE-SPACE: nowrap; 
+	background-color:#eeeeee;
+	color:#286093;
+	font-weight:bold;	
+	padding:0px 6px 2px 6px;
+	
+}
+.pageNavigatorDataGrid A 
+{
+	margin-top:15px;
+	padding:0px 6px 2px 6px;
+	ZOOM: normal;
+	color:blue;
+	border: #cad6e8 1px solid;
+	text-decoration:none;
+}
+.pageNavigatorDataGrid A:link 
+{
+	margin-top:5px;
+	padding:0px 6px 2px 6px;
+	ZOOM: normal;
+	color:#286093;
+	text-decoration:none;
+	border: #cad6e8 1px solid;
+}
+.pageNavigatorDataGrid A:hover 
+{
+	margin-top:5px;
+	padding:0px 6px 2px 6px;
+	text-decoration:none;
+	background-color:#5E90C3;
+	color:Red;
+}
+.pageNavigatorDataGrid span 
+{
+	padding:0px 6px 2px 6px;
+	ZOOM: normal;
+	background-color:#5E90C3;
+	color:#B6FFDE;
+}
+.VidepTopic
+{
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/VideoTopic.png);
+	background-repeat : no-repeat;
+	background-position:0px -2px;
+	height:35px;
+	color:#024c93;
+	font-family:Arial;
+	font-size:13px;
+	padding-left:40px;
+	padding-top:2px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.VideoBgHome
+{
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/VideoBgHome.png);
+	background-repeat : no-repeat;
+	float:left; width:200px; margin:2px;height:140px;
+	padding:8px;
+	padding-top:3px;
+	padding-left:3px;
+}
+.VideoImgHome
+{
+	width:192px;
+	height:102px;
+	margin-bottom:8px;
+	text-align:left;
+}
+.VideoBg
+{
+	background: url(http://www.quybaovevaphattrienrungna.org/Images/VideoBg.png);
+	background-repeat : no-repeat;
+	float:left; width:158px; margin:2px;height:140px;
+	padding:2px;
+	padding-top:3px;
+	padding-left:3px;
+}
+.VideoImg
+{
+	width:155px;
+	height:102px;
+	margin-bottom:8px;
+	text-align:left;
+}
+.VideoText
+{
+	text-align:justify;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#515151;
+	text-decoration:none;
+}
+.VideoText A
+{
+	color:#515151;
+	text-decoration:none;
+}
+.VideoText A:link
+{
+	color:#515151;
+	text-decoration:none;
+}
+.VideoText A:hover
+{
+	color:#515151;
+	text-decoration:none;
+}
+.VideoText A:visited
+{
+	color:#515151;
+	text-decoration:none;
+}
+.VideoPlay
+{
+	text-align:left;
+	z-index:1000; 
+	position:relative;
+	top:-24px;
+	left:2px;
+	width:16px;
+	margin-bottom:-30px;
+}
+.JournalItem
+{
+	background-image:url("../images/NADOST_NewItem.png");
+	background-repeat:no-repeat;
+	background-position:0 center;
+	float:left; 
+	width:290px;
+	margin:3px;
+	padding:2px;
+	padding-top:3px;
+	display:block;
+	padding-left:11px;
+	text-align:justify;
+	text-decoration:none;
+	color:#0030ff;
+}
+.JournalItem A
+{
+	text-decoration:none;
+	color:#0030ff;
+}
+.JournalItem A:link
+{
+	text-decoration:none;
+	color:#0030ff;
+}
+.JournalItem A:hover
+{
+	text-decoration:none;
+	color:#0030ff;
+}
+.JournalItem A:visited
+{
+	text-decoration:none;
+	color:#0030ff;
+}
+img 
+{
+	border:none;
+}
+
+	.NewPlay 
+    {
+    	
+    	font-family:Arial;
+    	font-size:12px;
+    	border:0;
+    	border-left:5px solid #fff;
+		border-right:5px solid #fff;
+    }
+      .NewPlay a
+    {
+    	color:Black;
+    }
+    
+         .NewPlay   a:link
+    {
+    	text-decoration:none;
+    }
+     .NewPlay a:hover
+    {
+    	text-decoration:none;
+    	
+    } 
+    
+    .NewPlay1 
+    {
+    	font-family:Arial;
+    	font-size:12px;
+    	border:0;
+    	padding-top:6px;
+    	border-left:5px solid #fff;
+		border-right:5px solid #fff;
+		text-align:left;
+		border:0;
+    }
+      .NewPlay1 a
+    {
+    	color:Black;
+    }
+    
+         .NewPlay1   a:link
+    {
+    	text-decoration:none;
+    }
+     .NewPlay1 a:hover
+    {
+    	text-decoration:none;
+    } 
