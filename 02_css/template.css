@@ -793,7 +793,7 @@ h2.detail-title
     color: #1c9a1d;
     font-size: 20px;
     font-weight: normal;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 div.intro
 {
@@ -803,7 +803,7 @@ div.intro
 }
 div.item-separator
 {
-    border-bottom: 1px solid #CCCCCC;
+    /* border-bottom: 1px solid #CCCCCC; */
     clear: both;
     display: block;
     height: 6px;
