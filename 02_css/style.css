@@ -9,7 +9,7 @@ body {
 }
 
 .Top1banner_bg {
-	background-image: url('/img/banner.jpg');
+	/* background-image: url('/img/banner.jpg'); */
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 990px;
